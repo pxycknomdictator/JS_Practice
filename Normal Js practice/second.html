@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Dom practice</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <button onclick="launch()" type="button" id="button">Click me!</button>
+    <p id="demo"></p>
+    <script>
+        let launch = () => {
+            const input = prompt("Enter your name");
+            const result = document.getElementById("demo");
+            result.textContent = ` Hello ${input} Bro kese ha ap`;
+            result.style.fontFamily = "san-serif";
+        }
+
+        // Using addEventListener 
+        // document.getElementById("button").addEventListener("click", () => {
+        //     const userdata = prompt("Enter your name");
+        //     const print = document.getElementById("demo");
+        //     print.textContent = ` Hello ${userdata} Bro kese ha ap`;
+        //     print.style.fontFamily = "san-serif"
+        // })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+
+    <button id="btn">Click me!</button>
+
+    <p id="demo"></p>
+
+    <script>
+        // Applying Multiple Events In a single Element
+        let a = document.getElementById("btn");
+        a.addEventListener("mouseover", first);
+        a.addEventListener("click", midFunc);
+        a.addEventListener("mouseout", last);
+
+        function first(){
+            document.getElementById("demo").innerHTML += "I am a mouseover <br>";
+        }
+        function midFunc() {
+            document.getElementById("demo").innerHTML += "I am a click <br>";
+        }
+        function last() {
+            document.getElementById("demo").innerHTML += "I am a mouseout <br>";
+        }
+    </script>
+
+</body>
+
+</html>

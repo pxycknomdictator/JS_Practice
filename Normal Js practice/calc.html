@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" name="name" id="fvalue"><br><br>
+    <input type="number" name="vlaue" id="svalue"><br><br>
+
+    <button onclick="Calculating('add')">Addition</button>
+    <button onclick="Calculating('sub')">Subtarction</button>
+    <button onclick="Calculating('mul')">Multiplication</button>
+    <button onclick="Calculating('div')">Division</button>
+
+    <h2 id="output"></h2>
+
+    <script>
+        const result = document.getElementById("output");
+        let Calculating = (operator) => {
+            let first = Number.parseInt(document.getElementById("fvalue").value);
+            let second = Number.parseInt(document.getElementById("svalue").value);
+
+
+            if (operator === "add") {
+                result.textContent = first + second + "  💙  ";
+            } else if (operator === "sub") {
+                result.textContent = first - second + "  💙  ";
+            } else if (operator === "mul") {
+                result.textContent = first * second + "  💙  ";
+            } else if (operator === "div") {
+                if (!second == 0) {
+                    result.textContent = first / second + "  💙  ";
+                } else {
+                    result.textContent = "Can't Divide by zero You fool!!! 😆";
+                }
+            } else {
+                result.textContent = "Invalid value Enter";
+            }
+
+
+        // you can also use this switch statment instead of if else
+            // switch (operator) {
+            //     case "add":
+            //         result.textContent = first + second + "  💙  ";
+            //         break;
+            //     case "sub":
+            //         result.textContent = first - second + "  💙  ";
+            //         break;
+            //     case "mul":
+            //         result.textContent = first * second + "  💙  ";
+            //         break;
+            //     case "div":
+            //         if (!second == 0) {
+            //             result.textContent = first / second + "  💙  ";
+            //         } else {
+            //             result.textContent = "Can't Divide by zero You fool!!! 😆";
+            //         };
+            //         break;
+
+            //     default:
+            //         result.textContent = "Invalid value Enter";
+            //         break;
+            // }
+        }
+    </script>
+</body>
+
+</html>
