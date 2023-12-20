@@ -15,9 +15,9 @@ const firstFun = async (timer,value) => {
 
 const result = async ()=>{
     const fetching1 = await firstFun(5000, "Data-1 💙");
-    const fetching2 = await firstFun(7000, "Data-2 💙");
-    const fetching3 = await firstFun(8000, "Data-3 💙");
-    const fetching4 = await firstFun(9000, "Data-4 💙");
+    const fetching2 = await firstFun(8000, "Data-2 💙");
+    const fetching3 = await firstFun(11000, "Data-3 💙");
+    const fetching4 = await firstFun(13000, "Data-4 💙");
     return [fetching1,fetching2,fetching3,fetching4];
 }
 
