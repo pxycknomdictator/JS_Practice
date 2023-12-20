@@ -1,6 +1,6 @@
 const firstFun = async (timer,value) => {
     try {
-        setTimeout(() => {
+         setTimeout(() => {
             let check = true
             if (!check) {
                 console.log("Something is wrong 💔")
