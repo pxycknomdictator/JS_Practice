@@ -3,17 +3,13 @@ const asynchronous = async () => {
     try {
         let fetching = await fetch(url);
         let inputData = await fetching.json();
-        return [fetching, inputData];
+        console.log(inputData);
     } catch (error) {
         console.log("Oh no Error found");
     }
 }
 
-asynchronous().then((output) => {
-    console.log(output)
-});
-
-
+asynchronous();
 
 
 
