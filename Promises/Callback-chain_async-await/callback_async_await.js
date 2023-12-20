@@ -2,14 +2,14 @@ const firstFun = async (timer,value) => {
     try {
          setTimeout(() => {
             let check = true
-            if (!check) {
-                console.log("Something is wrong 💔")
-            } else {
+            if (check) {
                 console.log("Success "  + value)
+            }else{
+                console.log("Something is wrong 💔")
             }
         }, timer);
     } catch (error) {
-        throw new Error("404 Error found")
+        throw new Error("Something is wrong 💔")
     }
 }
 
