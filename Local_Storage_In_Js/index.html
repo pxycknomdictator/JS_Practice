@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const Object = {
+            name: "Noman",
+            is18Plus: true,
+            age: 20,
+            hobbies: ["Web-Development, Web-designer, 4K-Bagherat"]
+        }
+
+        //TODO: Set Data into a localStorage
+
+        const setData = localStorage.setItem("Noman", JSON.stringify(Object)) // json.stringify convert object to string
+        // const setData = localStorage.setItem("Noman", "Full-Stack-Web-Developer")
+
+
+        //TODO: Get Data from localStorage
+
+        const getData = localStorage.getItem("Noman")
+        console.log(JSON.parse(getData)); // json.parse convert string data to a object
+
+
+        //TODO: Remove Data from localStorage
+
+        const remove = localStorage.removeItem("Noman")
+        console.log(remove);
+
+        
+    </script>
+</body>
+</html>
