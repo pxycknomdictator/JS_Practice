@@ -39,8 +39,8 @@ console.log(firstObject.name); // Output John Cena not Noman
 
 firstObject = {name: "The rock"}; // Assign the new object to the first variable thats why now both objects has the different values.
 
-console.log(firstObject);
-console.log(secondObject);
+console.log(firstObject); // Output is The rock
+console.log(secondObject); // Output is John Cena
 
 
 // Now we know that Objects does not copy its value they copy his memory space allowcated by the system and depend on a single address.
