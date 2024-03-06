@@ -61,4 +61,19 @@ console.log(doSomething(MyObject)); // Output will be 21
 console.log(MyObject.age); // Age is increament 20 => 21
 
 
-// In this function we pass the reference of the object and increament the value of origional value of object
+// In this function we pass the reference of the object and increament the value of original value of object
+
+
+// What happend if we pass a primitive data type on the object as a argument?
+
+let Dollar = 0
+
+function IncreamentMoney(money) {
+  return money += 1
+}
+
+console.log(IncreamentMoney(Dollar)); // This function increament value of Dollar
+
+console.log(Dollar); 
+
+// The original value does not effect because primitive data types copy its a value not a reference thats why global variable does not effect
