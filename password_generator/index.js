@@ -11,4 +11,5 @@ range.addEventListener("input", () => {
     const random = Math.floor(Math.random() * password.length);
     generatedPassword += password[random];
   }
+  display.innerText = generatedPassword;
 });
