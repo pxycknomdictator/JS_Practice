@@ -4,5 +4,11 @@ const password = "abcABCEDFGHdefghijklmnoVWXYZpqrstuvwxyzIJQRSTU";
 
 range.addEventListener("input", () => {
   display.innerText = "";
-  console.log(range.value);
+  const passwordLength = range.value;
+  let generatedPassword = "";
+
+  for (let i = 0; i < passwordLength; i++) {
+    const random = Math.floor(Math.random() * password.length);
+    generatedPassword += password[random];
+  }
 });
