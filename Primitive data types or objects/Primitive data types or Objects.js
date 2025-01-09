@@ -45,3 +45,7 @@ const user_information = Object.freeze({
 });
 
 // user_information["name"] = "John Doe" // I can't do that because this object is freeze
+
+// what happened if i want to access values of an object in the form of array?
+
+Object.values(user_information); // this will return all values in the form or array
