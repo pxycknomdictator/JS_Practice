@@ -48,4 +48,8 @@ const user_information = Object.freeze({
 
 // what happened if i want to access values of an object in the form of array?
 
-Object.values(user_information); // this will return all values in the form or array
+Object.values(user_information); // this will return ["Noman", 90]
+
+// so what about keys?
+
+Object.keys(user_information); // this will return ["name", "age"]
