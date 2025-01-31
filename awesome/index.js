@@ -16,3 +16,15 @@ console.log({ name, email });
 
 delete user_information.password;
 console.log(user_information);
+
+// Today I find a awesome thing in javascript that blow my mind
+
+// In this code we are using arguments keyword to get the arguments from the function. It's an object or something like that
+// This only work in traditional function not in arrow function
+// This a object its also work without passing parameters
+
+function sum() {
+  return arguments[0] + arguments[1];
+}
+
+console.log(sum(1, 5));
